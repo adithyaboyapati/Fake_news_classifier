@@ -4,7 +4,7 @@
 
 
 ## Objective
-This case study requires to develop a Machine Learning model which predicts whether the news that appeared in the article is Fake or real(genuine)   
+This case study requires to develop a Machine Learning model,Deep learning model which predicts whether the news that appeared in the article is Fake or real(genuine)   
 
 ## Data Description
 
@@ -20,11 +20,17 @@ URL : https://www.kaggle.com/c/fake-news/data
   * We will be using the Fake News classification data set present in the Kaggle Repository. This Data set is satisfying our data requirement. 
 
 * Data Preprocessing
-  * As part of data preprocessing we have removed the stopwords in the data and then applied porter stemmer to convert a word into its root form and then applied the TfidfVectorizer.
+* ML Approcah
+  * As part of data preprocessing I have removed the stopwords in the data and then applied porter stemmer to convert a word into its root form and then applied the TfidfVectorizer.
+* Deep Learning Approach
+  *   As part of data preprocessing I have removed the stopwords in the data and then applied porter stemmer to convert a word into its root form and then applied the one hot encoding and then applied padding.
 
 * Model Training
+* ML Approach
   * We trained various models in our notebook and Passive Aggressive Classifier Algorithm was a good fit.
-
+* DL Approach
+  * I have trained the model with LSTM,BI-Directional LSTM and stacked LSTM but the best accuracy was about 93%. so I have used the ML model for deployment.
+  
 * Model Evaluation
   * We have used accuracy score, F1-score to decide the number of clusters
 
